@@ -1,0 +1,94 @@
+.App {
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-logo-hy {
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.ListBeer {
+	width: 100%;
+}
+
+.ItemBeerImage {
+	width: 20%;
+}
+
+.ItemBeerImage img{
+	max-width: 150px;
+	height: 150px;
+}
+
+.ItemBeerContent{
+	width: 75%;
+	text-align: left;
+	font-family: 'abril fatface';
+	font-size: 25px;
+}
+
+.DetailHeader{
+	font-family: 'abril fatface';
+	font-size: 25px;
+	text-align: left;
+}
+
+.DetailBody{
+	font-family: 'open sans';
+	font-size: 15px;
+	text-align: left;
+}
+
+.DetailImg {
+	position: absolute;
+	top: 180px;
+	left: 10%;
+	max-width: 239px;
+	max-height: 319px;
+}
+
+.ListStore {
+	font-family: 'abril fatface';
+	font-size: 20px;
+	text-align: left;
+	width: 30%;
+	position: relative;
+	float: left;
+}
+
+.MapStore {
+	position: relative;
+	float: right;
+	width: 450px;
+}
+
+.Pagination {
+	text-align: center;
+	font-size: small
+}
