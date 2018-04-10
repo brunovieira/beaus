@@ -3,16 +3,29 @@ import logoBeaus from './img/logo_beaus.svg';
 import { Link } from 'react-router-dom';
 
 class ItemBeer extends Component {
+
+	centsToDollar(cents) {
+		const dollar = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(cents/100);
+		return dollar;
+	}
+
   render() {
-		const img = this.props.beer.image_thumb_url ? this.props.beer.image_thumb_url : logoBeaus;
+		const classRow = `ItemBeerRow ${this.props.index%2 ? 'ItemBeerOdd' : 'ItemBeerEven'}`;
     return (
-			<tr>
-				<td className='ItemBeerImage'>
-					<img src={img} alt={this.props.beer.name} />
-				</td>
-				<td className='ItemBeerContent'>
+			<tr className={classRow} >
+				<td with='40%'>
 					<p>
 						<Link to={`/detail/${this.props.beer.id}`} >{this.props.beer.name}</Link>
+					</p>
+				</td>
+				<td with='40%'>
+					<p>
+						<Link to={`/detail/${this.props.beer.id}`} >{this.props.beer.tertiary_category ? this.props.beer.tertiary_category : this.props.beer.secondary_category}</Link>
+					</p>
+				</td>
+				<td with='20%'>
+					<p>
+						<Link to={`/detail/${this.props.beer.id}`} >{this.centsToDollar(this.props.beer.price_in_cents)}</Link>
 					</p>
 				</td>
 			</tr>

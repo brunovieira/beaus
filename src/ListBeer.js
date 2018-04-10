@@ -43,7 +43,7 @@ class ListBeer extends Component {
 	}
 
   render() {
-		const listProduct = this.state.products.map( beer => <ItemBeer key={beer.id} beer={beer} />);
+		const listProduct = this.state.products.map( (beer, index) => <ItemBeer key={beer.id} index={index} beer={beer} />);
     return (
       <table className='ListBeer'>
 				<tbody>

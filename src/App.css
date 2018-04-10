@@ -2,7 +2,14 @@
 	text-align: center;
 	padding-left: 10%;
 	padding-right: 10%;
+	background-color: #a4baba;
+	color: #512b1b;
 }
+
+.App a {
+	color: #512b1b;
+}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -37,20 +44,18 @@
 	width: 100%;
 }
 
-.ItemBeerImage {
-	width: 20%;
-}
-
-.ItemBeerImage img{
-	max-width: 150px;
-	height: 150px;
-}
-
-.ItemBeerContent{
-	width: 75%;
+.ItemBeerRow{
 	text-align: left;
 	font-family: 'abril fatface';
 	font-size: 25px;
+}
+
+.ItemBeerOdd {
+	background-color: #c4a077;
+}
+
+.ItemBeerEven {
+	background-color: #f5dfbd;
 }
 
 .DetailHeader{
