@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logoBeaus from './img/logo_beaus.svg';
 import { Link } from 'react-router-dom';
 
 class ItemBeer extends Component {
